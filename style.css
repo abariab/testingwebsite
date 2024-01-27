@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner {
+     height: 100vh;
+     text-align: center;
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+     padding: 50px;
+}
+h1{
+    font-size: 3em;
+    text-decoration: underline;
+}
+p{
+    font-size: 1.5em;    
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: darkcyan;
+    color: white;
+    font-size: 1.5em;
+}
+.img1{
+    background-image: url('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630');
+}
+.img2{
+    background-image: url('https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg');
+}
+.img3{
+    background-image: url('https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg');
+}
+
+.cardParent{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cardParent div{
+    width: 300px;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, .2);
+}
+.sections{
+    display: flex;    
+}
+.sections div{
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.sec1{
+    background-image: url('https://iso.500px.com/wp-content/uploads/2014/12/bear.jpg');
+    flex: 1;
+}
+.sec2{
+    background-image: url('https://images.pexels.com/photos/34098/south-africa-hluhluwe-giraffes-pattern.jpg?cs=srgb&dl=pexels-pixabay-34098.jpg&fm=jpg');
+    flex: 1;
+}
+.sec3{
+    background-image: url('https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YW5pbWFsfGVufDB8fDB8fHww');
+    flex: 1;
+}
+.sec4{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjoC0kSUtXZ-gFhct_JMBf4AK-cKlF3MlX_g&usqp=CAU');
+    flex: 1;
+}
+.sec5{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSmMBRWvvB-NibO2JwzD6boS7P1AYgX80cEw&usqp=CAU');
+    flex: 1;
+}
+.imgSec{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    justify-content: center;
+}
+.imgSec img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, .2);
+    display: inline-block;
+    margin: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .imgSec img{
+        width: 150px;
+        height: 150px;
+    }
+    .sections{
+        display: block;
+    }
+    .sections div{
+        flex: none;
+        height: 300px;
+        width: 100%;
+    }
+  }
