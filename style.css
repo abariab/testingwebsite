@@ -10,7 +10,15 @@
      background-position: center;
      background-attachment: fixed;
      background-size: cover;
-     padding: 50px;
+     padding: 50px;   
+     display: flex;
+     flex-direction: column;
+     justify-content: center;  
+}
+.banner div{
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    padding: 20px;
 }
 h1{
     font-size: 3em;
